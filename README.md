@@ -14,3 +14,9 @@ This project uses the following technologies:
 * XSLT
 * Schematron
 * Schematron Quick Fix
+
+Copyright and License
+---------------------
+Copyright 2018 Syncro Soft SRL.
+
+This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/integrated-styleguide/blob/master/LICENSE)
