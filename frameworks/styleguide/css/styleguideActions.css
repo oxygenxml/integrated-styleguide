@@ -1,0 +1,73 @@
+p:empty:after {
+  color: gray;
+  content: "Type content or " oxy_button(action, oxy_action(name, 'Add rule', description, 'Insert a rule', operation, 'ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation', arg-fragment, '<dl audience="rules"><dlhead><dthd>Rule</dthd><ddhd/></dlhead><dlentry><dt/><dd/></dlentry></dl>', arg-insertLocation, '.'), transparent, true);
+}
+*[audience~='rules'] ddhd {
+  content: oxy_combobox(edit, '#text', editable, false, values, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/@id), ', ')"));
+  visibility: -oxy-collapse-text;
+}
+*[audience~='rules'] ddhd:not(:empty):after {
+  content: " " oxy_button(action, oxy_action(name, 'Add parameters', description, 'Insert rule paremeters', operation, 'ro.sync.ecss.extensions.commons.operations.XSLTOperation', arg-sourceLocation, 'ancestor::dl', arg-targetLocation, 'ancestor::dl', arg-script, '${frameworkDir}/css/params.xsl', arg-action, 'Replace'), transparent, true);
+}
+/* Rendering */
+*[audience~='rules'] dl,
+dl[audience~='rules'] {
+  display: table;
+}
+*[audience~='rules'] dl:after,
+dl[audience~='rules']:after {
+  display: block;
+  content: oxy_button(action, oxy_action(name, 'Delete rule', icon, '/images/Remove16.png' description, 'Delete rule', operation, 'ro.sync.ecss.extensions.commons.operations.DeleteElementOperation'), transparent, true, enableInReadOnlyContext, true);
+}
+*[audience~='rules'] dlhead,
+*[audience~='rules'] dlentry {
+  display: table-row;
+}
+*[audience~='rules'] dthd,
+*[audience~='rules'] ddhd,
+*[audience~='rules'] dt,
+*[audience~='rules'] dd {
+  display: table-cell;
+  padding: 0.2em;
+}
+*[audience~='rules'] dthd,
+*[audience~='rules'] ddhd {
+  background-color: #DDEEFF;
+}
+*[audience~='rules'] dt,
+*[audience~='rules'] dd {
+  background-color: #FAFCFF;
+}
+*[audience~='rules'] dt {
+  width: 30%;
+  padding-left: 2%;
+}
+*[audience~='rules'] dl,
+dl[audience~='rules'] {
+  -oxy-editable: false;
+}
+*[audience~='rules'] dd,
+*[audience~='rules'] ddhd {
+  -oxy-editable: true;
+}
+*[audience~='rules'] dd {
+  width: 60%;
+}
+*[audience~='rules'] dthd,
+*[audience~='rules'] ddhd,
+*[audience~='rules'] dt,
+*[audience~='rules'] dd {
+  border: 1px solid #EEEEEE;
+}
+*[audience~='rules'] dt:hover,
+*[audience~='rules'] dd:hover,
+*[audience~='rules'] dthd:hover,
+*[audience~='rules'] ddhd:hover {
+  border: 1px solid gray;
+}
+*[audience~='rules'] dt:focus,
+*[audience~='rules'] dd:focus,
+*[audience~='rules'] dthd:focus,
+*[audience~='rules'] ddhd:focus {
+  border: 1px solid blue;
+}

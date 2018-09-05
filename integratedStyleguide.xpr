@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.0">
+<project version="20.1">
     <meta>
         <filters directoryPatterns="" filePatterns="integratedStyleguide.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
-        <options/>
+        <options>
+            <serialized version="20.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>additional.frameworks.directories</String>
+                        <String-array>
+                            <String>${pd}/frameworks</String>
+                        </String-array>
+                    </entry>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.custom.locations.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
     </meta>
     <projectTree name="integratedStyleguide.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="src/styleguide.ditamap"/>
+        </folder>
         <folder path="."/>
     </projectTree>
 </project>
