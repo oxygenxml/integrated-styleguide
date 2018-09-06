@@ -35,14 +35,15 @@
 	<xsl:template match="*:parameter" mode="sch">
 		<xsl:param name="rule"/>
 		<xsl:variable name="name" select="*:name"/>
-		<xsl:variable name="q">"</xsl:variable>
-		<xsl:variable name="a">'</xsl:variable>
+		<xsl:variable name="q">&quot;</xsl:variable>
+		<xsl:variable name="a">&apos;</xsl:variable>
+		<xsl:variable name="empty"/>
 		<dlentry>
 			<dt><xsl:value-of select="$name"/></dt>
 			<dd>
 				<xsl:variable name="value" select="$rule/dlentry/dt[.=$name]/following-sibling::dd/node()[not(self::processing-instruction())]"/>
 				<xsl:choose>
-					<xsl:when test="$value!=''">
+					<xsl:when test="$value!=$empty">
 						<xsl:copy-of select="$value"/>
 					</xsl:when>
 					<xsl:otherwise>
