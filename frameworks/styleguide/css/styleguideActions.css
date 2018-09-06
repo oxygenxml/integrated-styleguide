@@ -3,7 +3,7 @@ p:empty:after {
   content: "Type content or " oxy_button(action, oxy_action(name, 'Add rule', description, 'Insert a rule', operation, 'ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation', arg-fragment, '<dl audience="rules"><dlhead><dthd>Rule</dthd><ddhd/></dlhead><dlentry><dt/><dd/></dlentry></dl>', arg-insertLocation, '.'), transparent, true);
 }
 *[audience~='rules'] ddhd {
-  content: oxy_combobox(edit, '#text', editable, false, values, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/@id), ', ')"));
+  content: oxy_combobox(edit, '#text', editable, false, values, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/@id), ', ')"), tooltips, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/*:title/normalize-space()), ', ')"));
   visibility: -oxy-collapse-text;
 }
 *[audience~='rules'] ddhd:not(:empty):after {

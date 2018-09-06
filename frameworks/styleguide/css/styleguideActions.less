@@ -21,7 +21,8 @@ p:empty:after {
  content:oxy_combobox( 
             edit, '#text',
             editable, false,
-            values, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/@id), ', ')")
+            values, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/@id), ', ')"),
+            tooltips, oxy_xpath("string-join((doc('http://www.oxygenxml.com/styleguide/rules/library.sch')//*:pattern[@abstract]/*:title/normalize-space()), ', ')")
 	);
 	visibility:-oxy-collapse-text;
 }
