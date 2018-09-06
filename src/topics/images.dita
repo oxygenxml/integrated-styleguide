@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="topic_yrp_jwk_p2b">
+    <title>Images</title>
+    <body>
+		<section id="section_shc_vwk_p2b">
+			<title>Image formats</title>
+			<p>Image formats that should be used in the documentation are:<ul id="ul_t3c_pwk_p2b">
+				<li>PNG</li>
+				<li>JPG</li>
+				<li>SVG</li>
+				</ul>We should not use other image formats.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>avoidWordInElement</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt/>
+						<dd/>
+					</dlentry>
+				</dl>
+			</p>
+		</section>
+		<section id="section_svm_5wk_p2b">
+			<title>Image scaling</title>
+			<p>Images should not be scaled dynamically.</p>
+		</section>
+    </body>
+</topic>
