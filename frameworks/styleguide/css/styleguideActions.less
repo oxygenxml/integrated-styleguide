@@ -8,7 +8,7 @@ p:empty:after {
  		oxy_button(
  			action,
 		 		oxy_action(
-		          name, 'Add rule', 
+		          name, '[Add rule]', 
 		          description, 'Insert a rule', 
 		          operation, 'ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation', 
 		          arg-fragment, '<dl audience="rules"><dlhead><dthd>Rule</dthd><ddhd/></dlhead><dlentry><dt/><dd/></dlentry></dl>',
@@ -28,13 +28,16 @@ p:empty:after {
 	);
 	visibility:-oxy-collapse-text;
 }
-
-*[audience~='rules'] ddhd:not(:empty):after {
+*[audience~='rules'] ddhd:not(:empty) {
+	content:"";
+	visibility:visible;
+}
+*[audience~='rules']  ddhd:not(:empty):after {
 	content:" "
 		oxy_button(
  			action,
 		 		oxy_action(
-		          name, 'Add parameters', 
+		          name, '[Add parameters]', 
 		          description, 'Insert rule paremeters', 
 		          operation, 'ro.sync.ecss.extensions.commons.operations.XSLTOperation', 
 		          arg-sourceLocation, 'ancestor::dl',
