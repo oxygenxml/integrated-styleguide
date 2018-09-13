@@ -6,6 +6,12 @@ p:empty:after {
   content: oxy_combobox(edit, '#text', editable, false, values, oxy_xpath("string-join((doc('../rules/library.sch')//*:pattern[@abstract]/@id), ', ')"), tooltips, oxy_xpath("string-join((doc('../rules/library.sch')//*:pattern[@abstract]/*:title/normalize-space()), ', ')"));
   visibility: -oxy-collapse-text;
 }
+@media oxygen AND (platform: "webapp") {
+  *[audience~='rules'] ddhd {
+    content: oxy_combobox(edit, '#text', editable, false, values, 'avoidWordInElement, avoidEndFragment, avoidAttributeInElement, recommendElementInParent, restrictWords, restrictCharacters, restrictNesting, restrictNumberOfChildren, restrictChildrenElements, avoidDuplicateContent, requireContentAfterElement, dita-allowedElementsForClass, dita-allowOnlyBlockElements', tooltips, 'Issue a warning if a word or a phrase appears inside a specified element, Issue a warning if a an element end with a specified fragment or character, Issue a warning if an attribute appears inside a specified element, Recommend usage of an element inside a parent element, Check the number of words to be within certain limits, Check the number of characters to be within certain limits, Restrict nesting levels for an element, Restrict the number of children elements in a parent element, Restrict the elements that can appear inside a parent element, Avoid having two elements with the same content, Check that we still have some text content following a specified element., Check element names for a DITA element that has a specified class value, Allow only DITA block elements inside an element');
+    visibility: -oxy-collapse-text;
+  }
+}
 *[audience~='rules'] ddhd:not(:empty) {
   content: "";
   visibility: visible;
