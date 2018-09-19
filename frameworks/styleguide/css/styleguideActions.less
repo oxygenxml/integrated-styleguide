@@ -66,6 +66,28 @@ p:empty:after {
 	;
 }
 
+
+@media oxygen AND (platform:"webapp") {
+	*[audience~='rules']  ddhd:not(:empty):after {
+	content:" "
+		oxy_button(
+ 			action,
+		 		oxy_action(
+		          name, '[Add parameters]', 
+		          description, 'Insert rule paremeters', 
+		          operation, 'ro.sync.ecss.extensions.commons.operations.XSLTOperation', 
+		          arg-sourceLocation, 'ancestor::dl',
+		          arg-targetLocation, 'ancestor::dl',
+		          arg-script, '@{staticParams}',
+		          arg-action, 'Replace'
+				),
+			transparent, true);
+	
+	;
+}
+}
+
+
 /* Rendering */
 
 *[audience~='rules'] dl,
