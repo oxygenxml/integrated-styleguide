@@ -15,11 +15,19 @@
 				<dl audience="rules">
 					<dlhead>
 						<dthd>Rule</dthd>
-						<ddhd>avoidWordInElement</ddhd>
+						<ddhd>avoidEndFragment</ddhd>
 					</dlhead>
 					<dlentry>
-						<dt/>
-						<dd/>
+						<dt>element</dt>
+						<dd>li</dd>
+					</dlentry>
+					<dlentry>
+						<dt>fragment</dt>
+						<dd>;</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>Do not end list items with semicolumn</dd>
 					</dlentry>
 				</dl>
 			</p>
