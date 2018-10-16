@@ -1,0 +1,16 @@
+language: xslt
+install:
+- echo "Installed"
+script:
+- sh .travis/publish.sh
+after_success:
+- sh .travis/deploy.sh
+env:
+  global:
+  - TITLE="Intelligent Interactive Styleguide"
+  - WELCOME="Your DITA Styleguide"
+  - TEMPLATE="orange"
+  - VARIANT="tiles"
+notifications:
+  email:
+on_success: always
