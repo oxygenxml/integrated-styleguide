@@ -1,0 +1,1 @@
+define(function() { return [{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/images.html"}]});

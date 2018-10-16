@@ -2,41 +2,29 @@
 <!DOCTYPE html
   PUBLIC "" "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" lang="en" dir="ltr">
-
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="wh-path2root" content="" /><title>Sample Style Guide</title>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="wh-path2root" content="" /><title>Search Results - Sample Style Guide</title>
         
-                
-        <script>
-            /**
-             * If an old URL is given, redirect to the corresponding topic from the WebHelp Responsive
-             */
-            var actualLocation = window.location.href;
-            var newLocation;
-            if (actualLocation.indexOf('/#')!=-1) {
-                newLocation = actualLocation.replace(/\/#/g, "/");
-                window.location.replace(newLocation);
-            }
-            if (actualLocation.match(/\/index\.(.*)#/gi)!=null) {
-                newLocation = actualLocation.replace(/\/index\.(.*)#/gi, "/");
-                window.location.replace(newLocation);
-            }
-        </script>
+        
+        
+        <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script>
 
         <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
 
         <!-- Latest compiled and minified Bootstrap CSS -->
-        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
         
         <!-- Bootstrap Optional theme -->
-        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
-        
-        <!-- Template default styles  -->
-        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/main-page.css?buildId=2018080216" />
+        <link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
 
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/search-page.css?buildId=2018080216" />
         
-        <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"></script>
+        <style>
+            .wh_search_results {
+                min-height: 40%;
+            }
+        </style>
 
-        <script data-main="./oxygen-webhelp/app/main-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+        <script data-main="./oxygen-webhelp/app/search-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
         
         <!-- Skin resources -->
         <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/orange.css?buildId=2018080216" />
@@ -44,8 +32,8 @@
         
         
     </head>
-    <body class="wh_main_page">
-        <a href="#content" class="sr-only sr-only-focusable">Jump to main content</a>
+    <body class="wh_search_page">
+        <a href="#results" class="sr-only sr-only-focusable">Jump to search results</a>
         <!-- EXM-36950 - Expand the args.hdr parameter here -->
         
         
@@ -62,7 +50,7 @@
                             See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
                     -->
                     
-                    <div class=" wh_publication_title "><a href="index.html"><span xmlns="" class="title">Sample Style Guide</span></a></div>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">Sample Style Guide</span></a></div>
                     
                 </div>
                 
@@ -84,13 +72,10 @@
             </div>
         </div>
     </div>
-</header>        
+</header>
         
         <!-- Search form -->
-        <div class=" wh_search_input navbar-form wh_main_page_search " role="form">
-          
-          <div class="wh_welcome">Your DITA Styleguide</div>          
-          <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+        <div class=" wh_search_input navbar-form search " role="form"><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
                                     $(document).ready(function () {
                                         $('#searchForm').submit(function (e) {
                                             if ($('.wh_search_textfield').val().length < 1) {
@@ -98,34 +83,11 @@
                                             }
                                         });
                                     });
-                                --></script></form>
-          
-        </div>
-        <div class="wh_content_area " id="content">
-            
-            <!-- This is the placeholder for the main page tiles. -->
-            <div class="container-fluid wh_content_flex_container">
-                <!-- This is the placeholder for the main page tiles. -->
-                <div class=" wh_tiles "><div class=" wh_tile  " data-id="topic_yrp_jwk_p2b">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="topics/images.html" data-id="topic_yrp_jwk_p2b">Images</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div></div>
-                <!--
-                    This is the placeholder for the main page entries
-                    presented in a tree-like fashion.
-                -->
-                
-                
+                                --></script></form></div>
+        <div class="container-fluid wh_content_area" id="results">
+            <div class="row">
+                <div class=" wh_search_results col-xs-12 col-sm-12 col-md-12 col-lg-12 " id="searchResults"><div class="searchPreload"><ul><li><div class="fakeResult"><div class="fakeTitle"></div><div class="fakeText"></div><div class="fakeText"></div><div class="fakeText"></div></div></li><li><div class="fakeResult"><div class="fakeTitle"></div><div class="fakeText"></div><div class="fakeText"></div><div class="fakeText"></div></div></li><li><div class="fakeResult"><div class="fakeTitle"></div><div class="fakeText"></div><div class="fakeText"></div><div class="fakeText"></div></div></li></ul></div></div>
+                <div id="wh-search-pagination" class="wh-search-pagination col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
             </div>
         </div>
         
@@ -141,7 +103,7 @@
         
         <!-- Latest compiled and minified JavaScript -->
         <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
         
     </body>
+     
 </html>
