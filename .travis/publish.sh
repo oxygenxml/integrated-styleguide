@@ -3,8 +3,13 @@
 echo "Publish $TRAVIS_BRANCH !"
 
 REPONAME=`basename $PWD`
+echo "REPONAME $REPONAME"
+
 PARENTDIR=`dirname $PWD`
+echo "PARENTDIR $PARENTDIR"
+
 USERNAME=`basename $PARENTDIR`
+echo "USERNAME $USERNAME"
 
 java -version
 
