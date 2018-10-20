@@ -61,6 +61,31 @@ bin/ant -f integrator.xml
 cd ..
 
 
+echo "====================================="
+echo "download Saxon9"
+echo "====================================="
+wget http://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-0-1J.zip >> download.log 2>>download.log
+echo "..."
+tail -n 2 download.log
+
+echo "====================================="
+echo "extract Saxon9"
+echo "====================================="
+unzip SaxonHE9-9-0-1J.zip -d saxon9/ >> extract.log 2>>extract.log
+head -n 10 extract.log
+echo "..."
+
+
+
+echo "====================================="
+echo "generate Schematron rules"
+echo "====================================="
+java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -s stc/styleguide.ditamap -xsl:src/rules/extractRules.xsl -catalog:dita-ot-2.5.2/catalog-dita.xml  
+
+cp stc/rules/blockElements.xml out/rules/blockElements.xml
+cp stc/rules/library.sch out/rules/library.sch
+cp stc/rules/rules.sch out/rules/rules.sch
+
 REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
 USERNAME=`basename $PARENTDIR`
