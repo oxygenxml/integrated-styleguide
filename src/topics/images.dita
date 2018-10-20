@@ -11,7 +11,6 @@
 				<li>JPG</li>
 				<li>SVG</li>
 				</ul>We should not use other image formats.</p>
-			<p/>
 		</section>
 		<section id="section_svm_5wk_p2b">
 			<title>Image scaling</title>
@@ -34,7 +33,7 @@
 					</dlentry>
 					<dlentry>
 						<dt>message</dt>
-						<dd>do not scale images from DITA</dd>
+						<dd>Please do not scale images dynamically.</dd>
 					</dlentry>
 				</dl>
 			</p>
