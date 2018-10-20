@@ -18,26 +18,6 @@
 			<p>Images should not be scaled dynamically. That means the <codeph>@scale</codeph> attribute
 				should not be used on the <codeph>image</codeph> element. If you need a different
 				image size, use an image processing application to obatin the size you want.</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>avoidAttributeInElement</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>element</dt>
-						<dd>image</dd>
-					</dlentry>
-					<dlentry>
-						<dt>attribute</dt>
-						<dd>scale</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>do not scale images from DITA</dd>
-					</dlentry>
-				</dl>
-			</p>
 		</section>
     </body>
 </topic>
