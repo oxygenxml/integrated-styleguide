@@ -2,6 +2,10 @@
 
 echo "Publish $TRAVIS_BRANCH !"
 
+REPONAME=`basename $PWD`
+PARENTDIR=`dirname $PWD`
+USERNAME=`basename $PARENTDIR`
+
 java -version
 
 echo "====================================="
@@ -80,10 +84,11 @@ echo "..."
 echo "====================================="
 echo "generate Schematron rules"
 echo "====================================="
-java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -s:src/styleguide.ditamap -xsl:src/rules/extractRules.xsl -catalog:dita-ot-2.5.2/catalog-dita.xml  
+java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -s:src/styleguide.ditamap -xsl:src/rules/extractRules.xsl -catalog:dita-ot-2.5.2/catalog-dita.xml publishedBaseURL=$USERNAME.github.io/$REPONAME/
 
 head -n 10 src/rules/rules.sch
 echo "..."
+
 
 mkdir -p out/rules
 cp src/rules/blockElements.xml out/rules/blockElements.xml
@@ -96,9 +101,6 @@ echo "====================================="
 echo "Publish the style guide as WebHelp"
 echo "====================================="
 
-REPONAME=`basename $PWD`
-PARENTDIR=`dirname $PWD`
-USERNAME=`basename $PARENTDIR`
 
 # Send some parameters to the "editlink" plugin as system properties
 export ANT_OPTS="$ANT_OPTS -Deditlink.remote.ditamap.url=github://getFileContent/$USERNAME/$REPONAME/$TRAVIS_BRANCH/src/styleguide.ditamap"
