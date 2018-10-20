@@ -82,7 +82,7 @@ echo "generate Schematron rules"
 echo "====================================="
 java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -s:src/styleguide.ditamap -xsl:src/rules/extractRules.xsl -catalog:dita-ot-2.5.2/catalog-dita.xml  
 
-head -n 10 rules.sch
+head -n 10 src/rules/rules.sch
 echo "..."
 
 mkdir -p out/rules
