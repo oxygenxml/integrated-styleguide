@@ -21,12 +21,4 @@
    <include href="library.sch#dita-allowedElementsForClass"/>
    <include href="library.sch#dita-allowOnlyBlockElements"/>
    <include href="quickFix-library.xml"/>
-   <!--Generated from topics/images.dita.
-    -->
-   <pattern is-a="avoidAttributeInElement"
-            see="http://example.com/styleguide/webhelp/topics/images.html">
-      <param name="element" value="image"/>
-      <param name="attribute" value="scale"/>
-      <param name="message" value="do not scale images from DITA"/>
-   </pattern>
 </schema>
