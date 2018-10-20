@@ -24,7 +24,7 @@
    <!--Generated from topics/images.dita.
     -->
    <pattern is-a="avoidAttributeInElement"
-            see="oxygenxml.github.io/integrated-styleguide/topics/images.html">
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
       <param name="element" value="image"/>
       <param name="attribute" value="scale"/>
       <param name="message" value="Please do not scale images dynamically."/>
