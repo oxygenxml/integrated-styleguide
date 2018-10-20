@@ -88,6 +88,7 @@ echo "..."
 mkdir -p out/rules
 cp src/rules/blockElements.xml out/rules/blockElements.xml
 cp src/rules/library.sch out/rules/library.sch
+cp src/rules/quickFix-library.xml out/rules/quickFix-library.xml
 cp src/rules/rules.sch out/rules/rules.sch
 
 
