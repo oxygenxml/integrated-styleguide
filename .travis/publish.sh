@@ -80,11 +80,11 @@ echo "..."
 echo "====================================="
 echo "generate Schematron rules"
 echo "====================================="
-java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -s stc/styleguide.ditamap -xsl:src/rules/extractRules.xsl -catalog:dita-ot-2.5.2/catalog-dita.xml  
+java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -s:src/styleguide.ditamap -xsl:src/rules/extractRules.xsl -catalog:dita-ot-2.5.2/catalog-dita.xml  
 
-cp stc/rules/blockElements.xml out/rules/blockElements.xml
-cp stc/rules/library.sch out/rules/library.sch
-cp stc/rules/rules.sch out/rules/rules.sch
+cp src/rules/blockElements.xml out/rules/blockElements.xml
+cp src/rules/library.sch out/rules/library.sch
+cp src/rules/rules.sch out/rules/rules.sch
 
 REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
