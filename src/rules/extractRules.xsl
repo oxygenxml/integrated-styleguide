@@ -6,6 +6,8 @@
 	version="2.0">
 	<xsl:output indent="yes"/>
 	
+	<xsl:param name="publishedBaseURL">http://example.com/styleguide/webhelp/</xsl:param>
+	
 	<xsl:variable name="library" select="resolve-uri('rules/library.sch', base-uri(/))"/>
 	<xsl:variable name="base" select="resolve-uri('.', base-uri(/))"/>  
 	
@@ -30,7 +32,7 @@
 		<xsl:apply-templates select="document(@href, .)" mode="rules"/>
 		<xsl:apply-templates mode="rules"/>
 	</xsl:template>
-	<xsl:template match="section[@audience='rules']/dl" mode="rules">
+	<xsl:template match="dl[ancestor-or-self::*[@audience='rules']]" mode="rules">
 		<xsl:apply-templates select="." mode="instantiate"/>
 	</xsl:template>
 	<xsl:template match="*" mode="rules">
@@ -41,7 +43,7 @@
 	<xsl:template match="dl" mode="instantiate">
 		<xsl:variable name="origin" select="substring-after(base-uri(.), $base)"/>
 		<xsl:variable name="target">
-			<xsl:text>http://example.com/styleguide/webhelp/</xsl:text>
+			<xsl:value-of select="$publishedBaseURL"/>
 			<xsl:value-of select="replace($origin, '.dita', '.html')"/>
 		</xsl:variable>
 		<xsl:comment>Generated from <xsl:value-of select="$origin"/>.
