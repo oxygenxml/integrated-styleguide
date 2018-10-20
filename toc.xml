@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><toc xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc">
    <title><span xmlns="http://www.w3.org/1999/xhtml" class="title">Sample Style Guide</span></title>
    <topic href="topics/images.html" data-id="topic_yrp_jwk_p2b" wh-toc-id="topic_yrp_jwk_p2b-d53e11">
-      <title>Images</title>
+      <title>Images test</title>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="topic_yrp_jwk_p2b"></resourceid>
-         <navtitle class="- topic/navtitle ">Images</navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">Images</linktext>
+         <navtitle class="- topic/navtitle ">Images test</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Images test</linktext>
       </topicmeta>
    </topic>
 </toc>
