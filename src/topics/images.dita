@@ -15,7 +15,9 @@
 		</section>
 		<section id="section_svm_5wk_p2b">
 			<title>Image scaling</title>
-			<p>Images should not be scaled dynamically.</p>
+			<p>Images should not be scaled dynamically. That means the <codeph>@scale</codeph> attribute
+				should not be used on the <codeph>image</codeph> element. If you need a different
+				image size, use an image processing application to obatin the size you want.</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
