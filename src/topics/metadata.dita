@@ -21,27 +21,6 @@
 			<title>Author information</title>
 			<p>Record the author of each topic using the <codeph>author</codeph> element inside the topic
 				prolog.</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>recommendElementInParent</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parent</dt>
-						<dd>prolog</dd>
-					</dlentry>
-					<dlentry>
-						<dt>element</dt>
-						<dd>author</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>Add author information to the document, by adding an author element
-							inside prolog.</dd>
-					</dlentry>
-				</dl>
-			</p>
 		</section>
     </body>
 </topic>
