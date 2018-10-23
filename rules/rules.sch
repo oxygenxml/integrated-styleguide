@@ -21,13 +21,4 @@
    <include href="library.sch#dita-allowedElementsForClass"/>
    <include href="library.sch#dita-allowOnlyBlockElements"/>
    <include href="quickFix-library.xml"/>
-   <!--Generated from topics/metadata.dita.
-    -->
-   <pattern is-a="recommendElementInParent"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="parent" value="prolog"/>
-      <param name="element" value="author"/>
-      <param name="message"
-             value="Add author information to the document, by adding an author element&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;inside prolog."/>
-   </pattern>
 </schema>
