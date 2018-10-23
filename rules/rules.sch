@@ -39,4 +39,12 @@
       <param name="max" value="10"/>
       <param name="message" value="A list should contain between 2 and 10 items."/>
    </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
+   <pattern is-a="avoidWordInElement"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="element" value="indexterm"/>
+      <param name="word" value="oXygen"/>
+      <param name="message" value="Do not ise oXygen in index terms"/>
+   </pattern>
 </schema>
