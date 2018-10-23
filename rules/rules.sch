@@ -25,7 +25,7 @@
     -->
    <pattern is-a="restrictNumberOfChildren"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
-      <param name="parentElement" value="ol"/>
+      <param name="parentElement" value="ul"/>
       <param name="element" value="li"/>
       <param name="min" value="2"/>
       <param name="max" value="10"/>
