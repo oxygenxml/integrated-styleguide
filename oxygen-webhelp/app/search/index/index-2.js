@@ -1,4 +1,4 @@
 define(function () {
 // Auto generated index for searching.
-return {"formats.":"0*10*-1$o","image":"0*59*-1$-1$-1$-1$8$a$n$q$17$1d$1g","images":"0*40*-1$0$5$s","jpg":"0*10*-1$h","jump":"0*0*1","main":"0*0*2","means":"0*10*-1$11","need":"0*0*1b","obtain":"0*0*1j","online":"0*10*7","other":"0*10*-1$m","png":"0*10*-1$g","processing":"0*0*1h","scale":"0*0*13"};
+return {"full":"1*10*-1$10","image":"0*59*-1$-1$-1$-1$8$a$n$q$17$1d$1g","images":"0*40*-1$0$5$s","items":"1*39*-1$-1$a$c$14$1b$1g","items.":"1*0*1f","jpg":"0*10*-1$h","jump":"0*0*1,1*0*1","leave":"1*10*-1$k","list":"1*29*-1$-1$9$b$15","lists":"1*30*0$5","main":"0*0*2,1*0*2","mark":"1*10*-1$n","means":"0*10*-1$11","more":"1*1*18$1c","need":"0*0*1b","normal":"1*10*-1$s","number":"1*9*13","obtain":"0*0*1j","online":"0*10*7,1*10*7","other":"0*10*-1$m","otherwise":"1*10*-1$o","png":"0*10*-1$g","processing":"0*0*1h","punctuation":"1*10*-1$m"};
 });
