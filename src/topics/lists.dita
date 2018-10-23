@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="topic_yrp_jwk_p2b">
+    <title>Lists</title>
+    <body>
+		<section id="section_shc_vwk_p2b">
+			<title>Ending list items</title>
+			<p>List items should not end with semi column. If it is something short leave it without a
+				punctuation mark, otherwise you can end it with the normal sentence ending, for
+				example a full stop.</p>
+		</section>
+		<section id="section_svm_5wk_p2b"><title>Number of items</title>A list should contain more than 2
+			items and no more than 10 items.</section>
+    </body>
+</topic>
