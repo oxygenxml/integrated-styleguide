@@ -21,4 +21,14 @@
    <include href="library.sch#dita-allowedElementsForClass"/>
    <include href="library.sch#dita-allowOnlyBlockElements"/>
    <include href="quickFix-library.xml"/>
+   <!--Generated from topics/lists.dita.
+    -->
+   <pattern is-a="restrictNumberOfChildren"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
+      <param name="parentElement" value="ol"/>
+      <param name="element" value="li"/>
+      <param name="min" value="2"/>
+      <param name="max" value="10"/>
+      <param name="message" value="A list should contain between 2 and 10 items."/>
+   </pattern>
 </schema>
