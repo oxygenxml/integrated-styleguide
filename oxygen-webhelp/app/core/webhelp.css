@@ -1,5 +1,5 @@
-@import "fonts.css?buildId=2018080216";
-@import "../indexterms/indexterms.css?buildId=2018080216";
+@import "fonts.css?buildId=2018101512";
+@import "../indexterms/indexterms.css?buildId=2018101512";
 
 .container-fluid {
   margin-right: auto;
@@ -850,6 +850,7 @@ abbr, abbr[title] {
 .wh_tile_title span{
     display: block;
     width: 100%;
+    line-height: 1.2em;
 }
 
 .wh_tile_title a{
