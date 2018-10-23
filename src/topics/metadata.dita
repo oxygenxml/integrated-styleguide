@@ -17,6 +17,26 @@
 		<example>validation</example>
 		<p>without mentioning the product name because that will not be relevant, as the product is
 			already the context for the index term.</p>
+		<p>
+			<dl audience="rules">
+				<dlhead>
+					<dthd>Rule</dthd>
+					<ddhd>avoidWordInElement</ddhd>
+				</dlhead>
+				<dlentry>
+					<dt>element</dt>
+					<dd>indexterm</dd>
+				</dlentry>
+				<dlentry>
+					<dt>word</dt>
+					<dd>oXygen</dd>
+				</dlentry>
+				<dlentry>
+					<dt>message</dt>
+					<dd>Do not ise oXygen in index terms</dd>
+				</dlentry>
+			</dl>
+		</p>
 		<section id="section_svm_5wk_p2b">
 			<title>Author information</title>
 			<p>Record the author of each topic using the <codeph>author</codeph> element inside the topic
