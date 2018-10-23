@@ -4,4 +4,5 @@
     <title>Sample Style Guide</title>
 	<topicref href="topics/images.dita"/>
 	<topicref href="topics/lists.dita"/>
+	<topicref href="topics/metadata.dita"/>
 </map>
