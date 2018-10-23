@@ -10,7 +10,9 @@
 				punctuation mark, otherwise you can end it with the normal sentence ending, for
 				example a full stop.</p>
 		</section>
-		<section id="section_svm_5wk_p2b"><title>Number of items</title>A list should contain more than 2
-			items and no more than 10 items.</section>
+		<section id="section_svm_5wk_p2b">
+			<title>Number of items</title>
+			<p>A list should contain more than 2 items and no more than 10 items.</p>
+		</section>
     </body>
 </topic>
