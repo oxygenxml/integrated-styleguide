@@ -45,6 +45,6 @@
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="element" value="indexterm"/>
       <param name="word" value="oXygen"/>
-      <param name="message" value="Do not ise oXygen in index terms"/>
+      <param name="message" value="Do not use oXygen in index terms"/>
    </pattern>
 </schema>
