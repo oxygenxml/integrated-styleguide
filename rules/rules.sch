@@ -23,6 +23,15 @@
    <include href="quickFix-library.xml"/>
    <!--Generated from topics/images.dita.
     -->
+   <pattern is-a="restrictWords"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
+      <param name="parentElement" value="title"/>
+      <param name="minWords" value="1"/>
+      <param name="maxWords" value="10"/>
+      <param name="message" value="Keep titles short."/>
+   </pattern>
+   <!--Generated from topics/images.dita.
+    -->
    <pattern is-a="avoidAttributeInElement"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
       <param name="element" value="image"/>
