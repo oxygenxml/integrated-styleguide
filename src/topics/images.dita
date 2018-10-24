@@ -11,6 +11,30 @@
 				<li>JPG</li>
 				<li>SVG</li>
 				</ul>We should not use other image formats.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictWords</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>title</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minWords</dt>
+						<dd>1</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxWords</dt>
+						<dd>10</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>Keep titles short.</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
 		<section id="section_svm_5wk_p2b">
 			<title>Image scaling</title>
