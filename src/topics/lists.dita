@@ -17,6 +17,26 @@
 				<dl audience="rules">
 					<dlhead>
 						<dthd>Rule</dthd>
+						<ddhd>restrictNesting</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>element</dt>
+						<dd>ul</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxNestingLevel</dt>
+						<dd>2</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>message stop that</dd>
+					</dlentry>
+				</dl>
+			</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
 						<ddhd>restrictNumberOfChildren</ddhd>
 					</dlhead>
 					<dlentry>
