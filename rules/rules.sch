@@ -49,6 +49,14 @@
    </pattern>
    <!--Generated from topics/lists.dita.
     -->
+   <pattern is-a="restrictNesting"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
+      <param name="element" value="ul"/>
+      <param name="maxNestingLevel" value="2"/>
+      <param name="message" value="message stop that"/>
+   </pattern>
+   <!--Generated from topics/lists.dita.
+    -->
    <pattern is-a="restrictNumberOfChildren"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
       <param name="parentElement" value="ul"/>
