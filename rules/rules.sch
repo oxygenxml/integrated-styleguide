@@ -23,6 +23,14 @@
    <include href="quickFix-library.xml"/>
    <!--Generated from topics/images.dita.
     -->
+   <pattern is-a="recommendElementInParent"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
+      <param name="parent" value="section"/>
+      <param name="element" value="title"/>
+      <param name="message" value="You should have a title for sections"/>
+   </pattern>
+   <!--Generated from topics/images.dita.
+    -->
    <pattern is-a="restrictWords"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
       <param name="parentElement" value="shortdesc"/>
