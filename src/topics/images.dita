@@ -16,6 +16,26 @@
 				<dl audience="rules">
 					<dlhead>
 						<dthd>Rule</dthd>
+						<ddhd>recommendElementInParent</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parent</dt>
+						<dd>section</dd>
+					</dlentry>
+					<dlentry>
+						<dt>element</dt>
+						<dd>title</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>You should have a title for sections</dd>
+					</dlentry>
+				</dl>
+			</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
 						<ddhd>restrictWords</ddhd>
 					</dlhead>
 					<dlentry>
