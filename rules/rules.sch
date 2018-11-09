@@ -23,62 +23,10 @@
    <include href="quickFix-library.xml"/>
    <!--Generated from topics/images.dita.
     -->
-   <pattern is-a="recommendElementInParent"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
-      <param name="parent" value="section"/>
-      <param name="element" value="title"/>
-      <param name="message" value="You should have a title for sections"/>
-   </pattern>
-   <!--Generated from topics/images.dita.
-    -->
-   <pattern is-a="restrictWords"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
-      <param name="parentElement" value="shortdesc"/>
-      <param name="minWords" value="3"/>
-      <param name="maxWords" value="20"/>
-      <param name="message" value="Message"/>
-   </pattern>
-   <!--Generated from topics/images.dita.
-    -->
-   <pattern is-a="restrictWords"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
-      <param name="parentElement" value="title"/>
-      <param name="minWords" value="1"/>
-      <param name="maxWords" value="10"/>
-      <param name="message" value="Keep titles short."/>
-   </pattern>
-   <!--Generated from topics/images.dita.
-    -->
    <pattern is-a="avoidAttributeInElement"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/images.html">
       <param name="element" value="image"/>
       <param name="attribute" value="scale"/>
-      <param name="message" value="Please do not scale images in DITA"/>
-   </pattern>
-   <!--Generated from topics/lists.dita.
-    -->
-   <pattern is-a="restrictNesting"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
-      <param name="element" value="ul"/>
-      <param name="maxNestingLevel" value="2"/>
-      <param name="message" value="message stop that"/>
-   </pattern>
-   <!--Generated from topics/lists.dita.
-    -->
-   <pattern is-a="restrictNumberOfChildren"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
-      <param name="parentElement" value="ul"/>
-      <param name="element" value="li"/>
-      <param name="min" value="2"/>
-      <param name="max" value="10"/>
-      <param name="message" value="A list should contain between 2 and 10 items."/>
-   </pattern>
-   <!--Generated from topics/metadata.dita.
-    -->
-   <pattern is-a="avoidWordInElement"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="element" value="indexterm"/>
-      <param name="word" value="oXygen"/>
-      <param name="message" value="Do not use oXygen in index terms"/>
+      <param name="message" value="Please do not scale images in the DITA source"/>
    </pattern>
 </schema>
