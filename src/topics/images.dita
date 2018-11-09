@@ -11,75 +11,6 @@
 				<li>JPG</li>
 				<li>SVG</li>
 				</ul>We should not use other image formats.</p>
-			<p>We should use images only for...</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>recommendElementInParent</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parent</dt>
-						<dd>section</dd>
-					</dlentry>
-					<dlentry>
-						<dt>element</dt>
-						<dd>title</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>You should have a title for sections</dd>
-					</dlentry>
-				</dl>
-			</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>restrictWords</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parentElement</dt>
-						<dd>shortdesc</dd>
-					</dlentry>
-					<dlentry>
-						<dt>minWords</dt>
-						<dd>3</dd>
-					</dlentry>
-					<dlentry>
-						<dt>maxWords</dt>
-						<dd>20</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>Message</dd>
-					</dlentry>
-				</dl>
-			</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>restrictWords</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parentElement</dt>
-						<dd>title</dd>
-					</dlentry>
-					<dlentry>
-						<dt>minWords</dt>
-						<dd>1</dd>
-					</dlentry>
-					<dlentry>
-						<dt>maxWords</dt>
-						<dd>10</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>Keep titles short.</dd>
-					</dlentry>
-				</dl>
-			</p>
 		</section>
 		<section id="section_svm_5wk_p2b">
 			<title>Image scaling</title>
@@ -102,7 +33,7 @@
 					</dlentry>
 					<dlentry>
 						<dt>message</dt>
-						<dd>Please do not scale images in DITA</dd>
+						<dd>Please do not scale images in the DITA source</dd>
 					</dlentry>
 				</dl>
 			</p>
