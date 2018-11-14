@@ -39,5 +39,33 @@
 			<p>Record the author of each topic using the <codeph>author</codeph> element inside the topic
 				prolog.</p>
 		</section>
+		<section id="section_bn1_25m_5fb">
+			<title>Titles</title>
+			<p>Titles should not be very long, we should keep them less than 10 words.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictWords</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>title</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minWords</dt>
+						<dd>1</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxWords</dt>
+						<dd>10</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>Titles should not be long, keep them less than 10 words.</dd>
+					</dlentry>
+				</dl>
+			</p>
+		</section>
     </body>
 </topic>
