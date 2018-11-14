@@ -41,9 +41,18 @@
     -->
    <pattern is-a="restrictWords"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="parentElement" value="shortdesc"/>
+      <param name="minWords" value="3"/>
+      <param name="maxWords" value="50"/>
+      <param name="message" value="message about keeping...."/>
+   </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
+   <pattern is-a="restrictWords"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="parentElement" value="title"/>
       <param name="minWords" value="1"/>
-      <param name="maxWords" value="10"/>
+      <param name="maxWords" value="12"/>
       <param name="message"
              value="Titles should not be long, keep them less than 10 words."/>
    </pattern>
