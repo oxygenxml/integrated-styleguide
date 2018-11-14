@@ -37,4 +37,14 @@
       <param name="word" value="oXygen"/>
       <param name="message" value="Do not use oXygen in index terms!"/>
    </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
+   <pattern is-a="restrictWords"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="parentElement" value="title"/>
+      <param name="minWords" value="1"/>
+      <param name="maxWords" value="10"/>
+      <param name="message"
+             value="Titles should not be long, keep them less than 10 words."/>
+   </pattern>
 </schema>
