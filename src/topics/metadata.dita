@@ -40,8 +40,33 @@
 				prolog.</p>
 		</section>
 		<section id="section_bn1_25m_5fb">
-			<title>Titles</title>
+			<title>Titles and short descriptions</title>
 			<p>Titles should not be very long, we should keep them less than 10 words.</p>
+			<p>Short descriptions should be less than 50 words.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictWords</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>shortdesc</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minWords</dt>
+						<dd>3</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxWords</dt>
+						<dd>50</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>message about keeping....</dd>
+					</dlentry>
+				</dl>
+			</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
@@ -58,7 +83,7 @@
 					</dlentry>
 					<dlentry>
 						<dt>maxWords</dt>
-						<dd>10</dd>
+						<dd>12</dd>
 					</dlentry>
 					<dlentry>
 						<dt>message</dt>
