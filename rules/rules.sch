@@ -31,6 +31,14 @@
    </pattern>
    <!--Generated from topics/metadata.dita.
     -->
+   <pattern is-a="restrictNesting"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="element" value="indexterm"/>
+      <param name="maxNestingLevel" value="1"/>
+      <param name="message" value="indexterms"/>
+   </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
    <pattern is-a="avoidWordInElement"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="element" value="indexterm"/>
