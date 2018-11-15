@@ -33,6 +33,34 @@
 		<section id="section_svm_5wk_p2b">
 			<title>Number of items</title>
 			<p>A list should contain more than 2 items and no more than 10 items.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictNumberOfChildren</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>ol</dd>
+					</dlentry>
+					<dlentry>
+						<dt>element</dt>
+						<dd>li</dd>
+					</dlentry>
+					<dlentry>
+						<dt>min</dt>
+						<dd>2</dd>
+					</dlentry>
+					<dlentry>
+						<dt>max</dt>
+						<dd>10</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>some message...</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
     </body>
 </topic>
