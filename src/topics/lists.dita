@@ -6,9 +6,29 @@
     <body>
 		<section id="section_shc_vwk_p2b">
 			<title>Ending list items</title>
-			<p>List items should not end with semi column. If it is something short leave it without a
+			<p>List items should not end with semi-colon. If it is something short leave it without a
 				punctuation mark, otherwise you can end it with the normal sentence ending, for
 				example a full stop.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>avoidEndFragment</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>element</dt>
+						<dd>li</dd>
+					</dlentry>
+					<dlentry>
+						<dt>fragment</dt>
+						<dd>;</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>List items should not end with semi-colon</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
 		<section id="section_svm_5wk_p2b">
 			<title>Number of items</title>
