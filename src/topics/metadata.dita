@@ -18,6 +18,26 @@
 			<dl audience="rules">
 				<dlhead>
 					<dthd>Rule</dthd>
+					<ddhd>restrictNesting</ddhd>
+				</dlhead>
+				<dlentry>
+					<dt>element</dt>
+					<dd>indexterm</dd>
+				</dlentry>
+				<dlentry>
+					<dt>maxNestingLevel</dt>
+					<dd>1</dd>
+				</dlentry>
+				<dlentry>
+					<dt>message</dt>
+					<dd>indexterms</dd>
+				</dlentry>
+			</dl>
+		</p>
+		<p>
+			<dl audience="rules">
+				<dlhead>
+					<dthd>Rule</dthd>
 					<ddhd>avoidWordInElement</ddhd>
 				</dlhead>
 				<dlentry>
