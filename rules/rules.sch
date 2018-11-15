@@ -29,6 +29,14 @@
       <param name="attribute" value="scale"/>
       <param name="message" value="Please do not scale images in the DITA source"/>
    </pattern>
+   <!--Generated from topics/lists.dita.
+    -->
+   <pattern is-a="avoidEndFragment"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
+      <param name="element" value="li"/>
+      <param name="fragment" value=";"/>
+      <param name="message" value="List items should not end with semi-colon"/>
+   </pattern>
    <!--Generated from topics/metadata.dita.
     -->
    <pattern is-a="restrictNesting"
