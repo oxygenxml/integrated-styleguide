@@ -67,6 +67,35 @@
 				<dl audience="rules">
 					<dlhead>
 						<dthd>Rule</dthd>
+						<ddhd>restrictCharacters</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>shortdesc</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minChars</dt>
+						<dd>1</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxChars</dt>
+						<dd>140</dd>
+					</dlentry>
+					<dlentry>
+						<dt>normalize</dt>
+						<dd>yes</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>Short descriptions should be used with twitter, so we should keep them
+							less than 140 characters.</dd>
+					</dlentry>
+				</dl>
+			</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
 						<ddhd>restrictWords</ddhd>
 					</dlhead>
 					<dlentry>
