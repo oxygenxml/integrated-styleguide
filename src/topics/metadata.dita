@@ -61,8 +61,8 @@
 		</section>
 		<section id="section_bn1_25m_5fb">
 			<title>Titles and short descriptions</title>
-			<p>Titles should not be very long, we should keep them less than 10 words.</p>
-			<p>Short descriptions should be less than 50 words.</p>
+			<p>Titles should not be very long, we should keep them less than 1 words.</p>
+			<p>Short descriptions should be less than 20 words.</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
@@ -75,15 +75,15 @@
 					</dlentry>
 					<dlentry>
 						<dt>minWords</dt>
-						<dd>3</dd>
+						<dd>1</dd>
 					</dlentry>
 					<dlentry>
 						<dt>maxWords</dt>
-						<dd>50</dd>
+						<dd>20</dd>
 					</dlentry>
 					<dlentry>
 						<dt>message</dt>
-						<dd>message about keeping....</dd>
+						<dd>Keep short descriptions between 1 and 20 words!</dd>
 					</dlentry>
 				</dl>
 			</p>
