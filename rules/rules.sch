@@ -65,6 +65,17 @@
    </pattern>
    <!--Generated from topics/metadata.dita.
     -->
+   <pattern is-a="restrictCharacters"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="parentElement" value="shortdesc"/>
+      <param name="minChars" value="1"/>
+      <param name="maxChars" value="140"/>
+      <param name="normalize" value="yes"/>
+      <param name="message"
+             value="Short descriptions should be used with twitter, so we should keep them&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;less than 140 characters."/>
+   </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
    <pattern is-a="restrictWords"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="parentElement" value="shortdesc"/>
