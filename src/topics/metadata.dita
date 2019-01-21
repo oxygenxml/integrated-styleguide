@@ -62,60 +62,6 @@
 		<section id="section_bn1_25m_5fb">
 			<title>Titles and short descriptions</title>
 			<p>Titles should not be very long, we should keep them less than 1 words.</p>
-			<p>Short descriptions should be less than 20 words.</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>restrictCharacters</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parentElement</dt>
-						<dd>shortdesc</dd>
-					</dlentry>
-					<dlentry>
-						<dt>minChars</dt>
-						<dd>1</dd>
-					</dlentry>
-					<dlentry>
-						<dt>maxChars</dt>
-						<dd>140</dd>
-					</dlentry>
-					<dlentry>
-						<dt>normalize</dt>
-						<dd>yes</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>Short descriptions should be used with twitter, so we should keep them
-							less than 140 characters.</dd>
-					</dlentry>
-				</dl>
-			</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>restrictWords</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parentElement</dt>
-						<dd>shortdesc</dd>
-					</dlentry>
-					<dlentry>
-						<dt>minWords</dt>
-						<dd>1</dd>
-					</dlentry>
-					<dlentry>
-						<dt>maxWords</dt>
-						<dd>20</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>Keep short descriptions between 1 and 20 words!</dd>
-					</dlentry>
-				</dl>
-			</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
@@ -140,6 +86,8 @@
 					</dlentry>
 				</dl>
 			</p>
+			<p>Short descriptions should be less than 20 words and also less than 140 characters so
+				we can use them easily with twitter.</p>
 		</section>
     </body>
 </topic>
