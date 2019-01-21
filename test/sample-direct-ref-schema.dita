@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-model href="https://oxygenxml.github.io/integrated-styleguide/rules/rules.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<topic id="topic_qqv_v44_nfb">
+    <title>Sample</title>
+	<shortdesc/>
+    <body>
+    	<p><image href="https://www.oxygenxml.com/img/mb_xml_editor.png" id="image_tk1_z44_nfb"/></p>
+		<p>This is a sample topic showing<ul id="ul_vjg_5cf_4fb">
+			<li>an example</li>
+			</ul></p>
+    </body>
+</topic>
