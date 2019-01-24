@@ -31,26 +31,6 @@
 				</dl>
 			</p>
 		</section>
-		<p>
-			<dl audience="rules">
-				<dlhead>
-					<dthd>Rule</dthd>
-					<ddhd>avoidEndFragment</ddhd>
-				</dlhead>
-				<dlentry>
-					<dt>element</dt>
-					<dd>li</dd>
-				</dlentry>
-				<dlentry>
-					<dt>fragment</dt>
-					<dd>!</dd>
-				</dlentry>
-				<dlentry>
-					<dt>message</dt>
-					<dd>List items should not end with exclamation mark....</dd>
-				</dlentry>
-			</dl>
-		</p>
 		<section id="section_svm_5wk_p2b">
 			<title>Number of items</title>
 			<p>A list should contain more than 2 items and no more than 10 items.</p>
