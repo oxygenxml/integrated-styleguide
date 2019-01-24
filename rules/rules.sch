@@ -39,15 +39,6 @@
    </pattern>
    <!--Generated from topics/lists.dita.
     -->
-   <pattern is-a="avoidEndFragment"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
-      <param name="element" value="li"/>
-      <param name="fragment" value="!"/>
-      <param name="message"
-             value="List items should not end with exclamation mark...."/>
-   </pattern>
-   <!--Generated from topics/lists.dita.
-    -->
    <pattern is-a="restrictNumberOfChildren"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
       <param name="parentElement" value="ol"/>
