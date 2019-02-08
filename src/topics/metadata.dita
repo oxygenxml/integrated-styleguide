@@ -88,6 +88,30 @@
 			</p>
 			<p>Short descriptions should be less than 20 words and also less than 140 characters so
 				we can use them easily with twitter.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictWords</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>shortdesc</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minWords</dt>
+						<dd>10</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxWords</dt>
+						<dd>20</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>message</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
     </body>
 </topic>
