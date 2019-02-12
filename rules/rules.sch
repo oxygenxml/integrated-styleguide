@@ -78,6 +78,15 @@
    <pattern is-a="restrictWords"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="parentElement" value="shortdesc"/>
+      <param name="minWords" value="5"/>
+      <param name="maxWords" value="50"/>
+      <param name="message" value="message..."/>
+   </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
+   <pattern is-a="restrictWords"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="parentElement" value="shortdesc"/>
       <param name="minWords" value="10"/>
       <param name="maxWords" value="20"/>
       <param name="message" value="message"/>
