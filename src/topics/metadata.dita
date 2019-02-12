@@ -100,6 +100,30 @@
 					</dlentry>
 					<dlentry>
 						<dt>minWords</dt>
+						<dd>5</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxWords</dt>
+						<dd>50</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>message...</dd>
+					</dlentry>
+				</dl>
+			</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictWords</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>shortdesc</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minWords</dt>
 						<dd>10</dd>
 					</dlentry>
 					<dlentry>
