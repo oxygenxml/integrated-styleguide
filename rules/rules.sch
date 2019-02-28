@@ -65,6 +65,14 @@
    </pattern>
    <!--Generated from topics/metadata.dita.
     -->
+   <pattern is-a="avoidWordInElement"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="element" value="title"/>
+      <param name="word" value="oxygen"/>
+      <param name="message" value="message"/>
+   </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
    <pattern is-a="restrictWords"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="parentElement" value="title"/>

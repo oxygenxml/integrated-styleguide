@@ -3,7 +3,7 @@
  */
 define(["require", "config"], function() {
     require([
-        'nav-links-loader',
+        'menu',
         'expand',
         'template-module-loader'
     ]);

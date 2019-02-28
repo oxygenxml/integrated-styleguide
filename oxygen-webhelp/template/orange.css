@@ -113,8 +113,8 @@ a:hover{
     display: none; /* Hide the 'Home' text */
 }
 .wh_breadcrumb .home > a:before{
-    content: '\e021'; /* Put an icon */
-    font-family: 'Glyphicons Halflings' !important;
+    content: 'o'; /* Put an icon */
+    font-family: 'oXygen WebHelp' !important;
     font-size: medium;
     padding-right: 0.5em;
 }
@@ -226,6 +226,7 @@ Example:
     border-radius: 0 0.6em 0.6em 0;
     background-color:orange;
     color:#fff;
+    padding: 0.3em 1em;
 }
 
 /* Search autocomplete */
@@ -377,7 +378,9 @@ Example:
     padding: 1em;
     line-height: 1.7em;
 }
-
+.wh_expand_btn:before{
+    margin-left: 1em;
+}
 .wh_topic_content li{
     margin: 0.5em;
 }
@@ -419,6 +422,22 @@ Example:
     color: #4b7cb4;
 }
 
+/*--------- Search results breadcrumb ----------*/
+.search-breadcrumb li a {
+    color:#fff;
+    background: orange;
+}
+.search-breadcrumb li .title:before,
+.search-breadcrumb li .title:after {
+    border-color: orange;
+}
+.search-breadcrumb li .title:before {
+    border-left-color: transparent;
+}
+.search-breadcrumb li .title:after {
+    border-color: transparent;
+    border-left-color: orange;
+}
 
 /*
  * ------------------------------------------------------------------

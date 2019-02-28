@@ -13,8 +13,8 @@ define(['properties'], function (properties) {
             return prop == 'true' || prop == 'yes';
         },
         getInteger : function (property) {
-        	var prop = properties[property];
-        	return parseInt(prop, 10);
+            var prop = properties[property];
+            return parseInt(prop, 10);
         },
         getIndexerLanguage : function() {
             // Implementation copied from IndexerTask.setIndexerLanguage()

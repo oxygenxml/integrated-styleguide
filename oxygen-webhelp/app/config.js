@@ -8,7 +8,9 @@ define(function() {
         "context-help" : "context-help/context-help",
         "context-help-map" : "context-help/context-help-map",
         // navigation links
-        "nav-links-loader" : "nav-links/nav-links-loader",
+        "menu" : "nav-links/menu-loader",
+        "toc" : "nav-links/toc-loader",
+        "nav" : "nav-links/nav",
         // search
         "search-init" : "search/search-init",
         "search" : "search/search",
@@ -17,6 +19,7 @@ define(function() {
         "searchHistoryItems" : "search/searchHistoryItems",
         // search index
         "index" : "search/index/index",
+        "link2parent" : "search/index/link-to-parent",
         "stopwords" : "search/index/stopwords",
         "index-1" : "search/index/index-1",
         "index-2" : "search/index/index-2",
@@ -65,7 +68,9 @@ define(function() {
         // JQuery Responsive image maps
         "jquery.rwdImageMaps" : "../lib/rwdImageMaps/jquery.rwdImageMaps.min",
         // JQuery Bootpag
-        "jquery.bootpag" : "../lib/jquery-bootpag/jquery.bootpag.min"
+        "jquery.bootpag" : "../lib/jquery-bootpag/jquery.bootpag.min",
+        // Popper
+        "bootstrap" : "../lib/bootstrap/js/bootstrap.bundle.min"
     };
 
     var shimConfig = {

@@ -2,7 +2,7 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
 
     /*
     	Oxygen WebHelp Plugin
-    	Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+    	Copyright (c) 1998-2019 Syncro Soft SRL, Romania.  All rights reserved.
     */
 
     var txt_browser_not_supported = "Your browser is not supported. Use of Mozilla Firefox is recommended.";
@@ -60,8 +60,6 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
         } catch (e) {
             util.debug("#########", e);
         }
-
-        $('.wh_indexterms_link').find('a').text('');
 
         $('.gcse-searchresults-only').attr('data-queryParameterName', 'searchQuery');
 
@@ -239,7 +237,9 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
                  $(this).bootpag({total: 10, maxVisible: 10});*/
             });
         }
-
+        // make bootpag compatible with Bootstrap 4.0
+        $('#wh-search-pagination').find('li').addClass('page-item');
+        $('#wh-search-pagination').find('a').addClass('page-link');
 
         $("#search").trigger('click');
     }
@@ -274,9 +274,10 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
      * @param {int} startsWith The number used to display 5 stars ranking.
      * @param {int} resultID The search result ID.
      * @param {int} linkID The search link ID.
+     * @param {[TopicInfo]} breadcrumb The breadcrumb of current document. Can be [].
      * @constructor
      */
-    function SearchResultInfo(topicID, relativePath, title, shortDescription, words, scoring, starWidth, resultID, linkID) {
+    function SearchResultInfo(topicID, relativePath, title, shortDescription, words, scoring, starWidth, resultID, linkID, breadcrumb) {
         this.topicID = topicID;
         this.relativePath = relativePath;
         this.title = title;
@@ -287,6 +288,7 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
         this.resultID = resultID;
         this.linkID = linkID;
         this.similarResults = [];
+        this.breadcrumb = breadcrumb;
     }
 
     /**
@@ -356,6 +358,7 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
                 var idResult = 'foundResult' + page;
 
                 // topicID, relativePath, title, shortDescription, words, scoring, starWidth, resultID, linkID, similarResults
+                console.log("page", page);
                 var csri = new SearchResultInfo(
                     allPages[page].topicID,
                     allPages[page].relativePath,
@@ -365,7 +368,8 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
                     allPages[page].scoring,
                     starWidth,
                     idResult,
-                    idLink
+                    idLink,
+                    allPages[page].breadcrumb
                 );
 
                 // Similar pages
@@ -591,41 +595,59 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
 
         var link = 'return openAndHighlight(\'' + tempPath + '\', ' + arrayString + '\)';
 
+        // Create the search result item li
         // Similar pages
         if (similarPageID == null) {
             htmlResult = $('<li/>', {
                 id: idResult
             });
-
-            var $a = $('<a/>', {
-                id: idLink,
-                href: tempPath,
-                class: 'foundResult'
-            }).html(tempTitle);
-            if (wh_Classic) {
-                $a.attr('onclick', link);
-            }
-
-            htmlResult.append($a);
         } else {
             htmlResult = $('<li/>', {
                 id: idResult,
                 class: 'similarResult',
                 'data-similarTo': similarPageID
             });
-
-            var $a = $('<a/>', {
-                id: idLink,
-                href: tempPath,
-                class: 'foundResult'
-            }).html(tempTitle);
-            if (wh_Classic) {
-                $a.attr('onclick', link);
-            }
-
-            htmlResult.append($a);
         }
 
+        // The topic title of the search result item
+        var $a = $('<a/>', {
+            id: idLink,
+            href: tempPath,
+            class: 'foundResult'
+        }).html(tempTitle);
+        htmlResult.append($a);
+
+        // The breadcrumb
+        var breadcrumb = searchItem.breadcrumb;
+        console.log('si ', searchItem);
+        console.log('breadcrumb', breadcrumb);
+        if (breadcrumb !== undefined && breadcrumb.length > 0) {
+            // Show the breadcrumb
+            var breadcrumbHtml = $('<div>', {
+                class: 'search-breadcrumb',
+            });
+
+            var breadcrumbItems = $('<ol>');
+            breadcrumb.forEach(function (item) {
+                var li = $('<li>');
+                var span = $('<span>',
+                    {
+                        class: 'title'
+                    });
+                span.append($('<a>',
+                    {
+                        href: item.relativePath,
+                        html: item.title
+                    }));
+                li.append(span);
+                breadcrumbItems.append(li);
+            });
+
+            breadcrumbHtml.append(breadcrumbItems);
+            htmlResult.append(breadcrumbHtml);
+        }
+
+        // Short description
         // Also check if we have a valid description
         if ((tempShortDesc != "null" && tempShortDesc != '...')) {
             var $shortDescriptionDIV = $('<div/>', {
