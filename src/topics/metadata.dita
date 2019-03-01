@@ -6,8 +6,8 @@
     <body>
 		<section id="section_shc_vwk_p2b">
 			<title>Index terms</title>
-			<p>Index terms should not start with the product name, for example if the product name is oXygen,
-				do not use </p>
+			<p>Index terms should not start with the product name, for example if the product name is oXygen
+				or SyncroSoft, do not use </p>
 		</section>
 		<example>oxygen validation</example>
 		<p>as index term, use simply </p>
@@ -31,6 +31,26 @@
 				<dlentry>
 					<dt>message</dt>
 					<dd>indexterms</dd>
+				</dlentry>
+			</dl>
+		</p>
+		<p>
+			<dl audience="rules">
+				<dlhead>
+					<dthd>Rule</dthd>
+					<ddhd>avoidWordInElement</ddhd>
+				</dlhead>
+				<dlentry>
+					<dt>element</dt>
+					<dd>indexterm</dd>
+				</dlentry>
+				<dlentry>
+					<dt>word</dt>
+					<dd>syncrosoft</dd>
+				</dlentry>
+				<dlentry>
+					<dt>message</dt>
+					<dd>Do not use the company name in index terms.</dd>
 				</dlentry>
 			</dl>
 		</p>
