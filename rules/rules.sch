@@ -68,6 +68,14 @@
    <pattern is-a="avoidWordInElement"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="element" value="indexterm"/>
+      <param name="word" value="syncrosoft"/>
+      <param name="message" value="Do not use the company name in index terms."/>
+   </pattern>
+   <!--Generated from topics/metadata.dita.
+    -->
+   <pattern is-a="avoidWordInElement"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
+      <param name="element" value="indexterm"/>
       <param name="word" value="oXygen"/>
       <param name="message" value="Do not use oXygen in index terms!"/>
    </pattern>
