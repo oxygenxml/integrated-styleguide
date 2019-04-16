@@ -18,46 +18,6 @@
 			<dl audience="rules">
 				<dlhead>
 					<dthd>Rule</dthd>
-					<ddhd>restrictNesting</ddhd>
-				</dlhead>
-				<dlentry>
-					<dt>element</dt>
-					<dd>indexterm</dd>
-				</dlentry>
-				<dlentry>
-					<dt>maxNestingLevel</dt>
-					<dd>1</dd>
-				</dlentry>
-				<dlentry>
-					<dt>message</dt>
-					<dd>indexterms</dd>
-				</dlentry>
-			</dl>
-		</p>
-		<p>
-			<dl audience="rules">
-				<dlhead>
-					<dthd>Rule</dthd>
-					<ddhd>avoidWordInElement</ddhd>
-				</dlhead>
-				<dlentry>
-					<dt>element</dt>
-					<dd>indexterm</dd>
-				</dlentry>
-				<dlentry>
-					<dt>word</dt>
-					<dd>syncrosoft</dd>
-				</dlentry>
-				<dlentry>
-					<dt>message</dt>
-					<dd>Do not use the company name in index terms.</dd>
-				</dlentry>
-			</dl>
-		</p>
-		<p>
-			<dl audience="rules">
-				<dlhead>
-					<dthd>Rule</dthd>
 					<ddhd>avoidWordInElement</ddhd>
 				</dlhead>
 				<dlentry>
@@ -86,26 +46,6 @@
 				<dl audience="rules">
 					<dlhead>
 						<dthd>Rule</dthd>
-						<ddhd>avoidWordInElement</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>element</dt>
-						<dd>title</dd>
-					</dlentry>
-					<dlentry>
-						<dt>word</dt>
-						<dd>oxygen</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>message</dd>
-					</dlentry>
-				</dl>
-			</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
 						<ddhd>restrictWords</ddhd>
 					</dlhead>
 					<dlentry>
@@ -128,54 +68,6 @@
 			</p>
 			<p>Short descriptions should be less than 20 words and also less than 140 characters so
 				we can use them easily with twitter.</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>restrictWords</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parentElement</dt>
-						<dd>shortdesc</dd>
-					</dlentry>
-					<dlentry>
-						<dt>minWords</dt>
-						<dd>5</dd>
-					</dlentry>
-					<dlentry>
-						<dt>maxWords</dt>
-						<dd>50</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>message...</dd>
-					</dlentry>
-				</dl>
-			</p>
-			<p>
-				<dl audience="rules">
-					<dlhead>
-						<dthd>Rule</dthd>
-						<ddhd>restrictWords</ddhd>
-					</dlhead>
-					<dlentry>
-						<dt>parentElement</dt>
-						<dd>shortdesc</dd>
-					</dlentry>
-					<dlentry>
-						<dt>minWords</dt>
-						<dd>10</dd>
-					</dlentry>
-					<dlentry>
-						<dt>maxWords</dt>
-						<dd>20</dd>
-					</dlentry>
-					<dlentry>
-						<dt>message</dt>
-						<dd>message</dd>
-					</dlentry>
-				</dl>
-			</p>
 		</section>
     </body>
 </topic>
