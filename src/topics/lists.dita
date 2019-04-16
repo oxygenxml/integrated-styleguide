@@ -6,10 +6,9 @@
     <body>
 		<section id="section_shc_vwk_p2b">
 			<title>Ending list items</title>
-			<p><?oxy_comment_start author="George Bina" timestamp="20190123T194950+0000" comment="This should be changed..."?>List
-				items should not end with semi-colon. If it is something short leave
-				it<?oxy_comment_end?> without a punctuation mark, otherwise you can end it with the
-				normal sentence ending, for example a full stop.</p>
+			<p>List items should not end with semi-colon. If it is something short leave it without a
+				punctuation mark, otherwise you can end it with the normal sentence ending, for
+				example a full stop.</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
