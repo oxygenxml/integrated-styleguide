@@ -51,7 +51,7 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
             searchQuery = util.getParameter('searchQuery');
             searchQuery = decodeURIComponent(searchQuery);
             searchQuery = searchQuery.replace(/\+/g, " ");
-            if (searchQuery!='' && searchQuery!==undefined && searchQuery!='undefined') {
+            if (searchQuery.trim()!='' && searchQuery!==undefined && searchQuery!='undefined') {
                 $('#textToSearch').val(searchQuery);
                 util.debug("Execute search");
                 executeQuery();
@@ -87,6 +87,16 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
 
             }
         };
+        
+        $('#searchForm').on('submit', function(event){
+            util.debug('submit form....');
+            if ($('#textToSearch').val().trim()=='') {
+                event.preventDefault();
+                event.stopPropagation();
+
+                return false;
+            }
+        });
     });
 
 

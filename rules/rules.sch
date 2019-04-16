@@ -57,35 +57,11 @@
    </pattern>
    <!--Generated from topics/metadata.dita.
     -->
-   <pattern is-a="restrictNesting"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="element" value="indexterm"/>
-      <param name="maxNestingLevel" value="1"/>
-      <param name="message" value="indexterms"/>
-   </pattern>
-   <!--Generated from topics/metadata.dita.
-    -->
-   <pattern is-a="avoidWordInElement"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="element" value="indexterm"/>
-      <param name="word" value="syncrosoft"/>
-      <param name="message" value="Do not use the company name in index terms."/>
-   </pattern>
-   <!--Generated from topics/metadata.dita.
-    -->
    <pattern is-a="avoidWordInElement"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="element" value="indexterm"/>
       <param name="word" value="oXygen"/>
       <param name="message" value="Do not use oXygen in index terms!"/>
-   </pattern>
-   <!--Generated from topics/metadata.dita.
-    -->
-   <pattern is-a="avoidWordInElement"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="element" value="title"/>
-      <param name="word" value="oxygen"/>
-      <param name="message" value="message"/>
    </pattern>
    <!--Generated from topics/metadata.dita.
     -->
@@ -96,23 +72,5 @@
       <param name="maxWords" value="10"/>
       <param name="message"
              value="Titles should not be long, keep them less than 10 words."/>
-   </pattern>
-   <!--Generated from topics/metadata.dita.
-    -->
-   <pattern is-a="restrictWords"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="parentElement" value="shortdesc"/>
-      <param name="minWords" value="5"/>
-      <param name="maxWords" value="50"/>
-      <param name="message" value="message..."/>
-   </pattern>
-   <!--Generated from topics/metadata.dita.
-    -->
-   <pattern is-a="restrictWords"
-            see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
-      <param name="parentElement" value="shortdesc"/>
-      <param name="minWords" value="10"/>
-      <param name="maxWords" value="20"/>
-      <param name="message" value="message"/>
    </pattern>
 </schema>
