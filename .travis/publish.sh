@@ -43,9 +43,11 @@ head -n 10 extract.log
 echo "..."
 cp -R com.oxygenxml.* dita-ot-2.5.2/plugins/
 
-echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
-echo "" >> licensekey.txt
-echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
+# echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
+# echo "" >> licensekey.txt
+# echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
+
+echo $WEBHELP_LICENSE | tr " " "\n" > licensekey.txt
 
 echo "****"
 cat licensekey.txt | head -8
