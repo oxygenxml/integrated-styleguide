@@ -47,7 +47,7 @@ To obtain that value, you need to go to *GitHub* and under *Settings* / *Develop
 
 - Check on the Travis website and see when the build is finalised, then your project GitHub Pages will be up-to-date and you can access your styleguide.
 
-##Note
+## Note
 The GitHub Pages URL where you can see this style guide is 
 https://oxygenxml.github.io/integrated-styleguide
 If you forked the project then the URL needs to be updated to contain your user name and your project name.
