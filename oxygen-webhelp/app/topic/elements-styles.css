@@ -213,14 +213,12 @@ div.rate_response {margin:-14px 0 0 0; }
     margin: 1.5em 0 .5em 0;
     font-size: 1.7em;
     font-weight: 400;
-    font-style: italic;
 }
 
 .topictitle3 {
     margin: 1.3em 0 .4em 0;
     font-size: 1.4em;
     font-weight: 300;
-    font-style: italic;
 }
 
 .topictitle4 {
@@ -237,4 +235,28 @@ div.rate_response {margin:-14px 0 0 0; }
     text-decoration: underline;
 }
 
+@media screen {
+    .topictitle1,
+    .topictitle2,
+    .topictitle3,
+    .topictitle4,
+    .topictitle5,
+    .topictitle6 {
+        word-break: break-all;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+.wh_child_links .olchildlinks,
+.wh_child_links .ullinks,
+.wh_child_links li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wh_child_links strong {
+    font-weight: normal;
+}
 

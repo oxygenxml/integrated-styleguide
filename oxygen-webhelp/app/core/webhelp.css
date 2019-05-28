@@ -1,7 +1,7 @@
-@import "fonts.css?buildId=2019032613";
-@import "icons.css?buildId=2019032613";
-@import "../indexterms/indexterms.css?buildId=2019032613";
-@import "webhelp-dot3x.css?buildId=2019032613";
+@import "fonts.css?buildId=2019052110";
+@import "icons.css?buildId=2019052110";
+@import "../indexterms/indexterms.css?buildId=2019052110";
+@import "webhelp-dot3x.css?buildId=2019052110";
 
 .container-fluid {
     margin-right: auto;
@@ -306,7 +306,7 @@ abbr, abbr[title] {
     .wh_toggle_button {
         float: none;
         line-height: 1em;
-        margin: 10px 0;
+        margin: 0;
     }
 
     .wh_header {
@@ -598,18 +598,6 @@ abbr, abbr[title] {
 	.wh_content_area {
 	    min-height: 500px;
 	}
-}
-
-.wh_child_links .olchildlinks,
-.wh_child_links .ullinks,
-.wh_child_links li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.wh_child_links strong {
-    font-weight: normal;
 }
 
 
@@ -1534,4 +1522,29 @@ html {
 
 body {
     font-size: 14px;     
+}
+
+/*
+ * Custom toggler
+ */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(52,123,183, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler {
+    border-color: #347bb7;
+}
+#wh_toc_button {
+    margin-left: 1em;
+}
+
+@media screen {
+    .wh_topic_toc li,
+    .wh_publication_toc li,
+    .wh_main_page_toc_entry,
+    .wh_top_menu ul,
+    .wh_breadcrumb ol {
+        word-break: break-all;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
 }

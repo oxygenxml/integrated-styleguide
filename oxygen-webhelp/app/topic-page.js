@@ -3,6 +3,7 @@
  */
 define(["require", "config"], function() {
     require([
+        'polyfill',
         'menu',
         'toc',
         'searchAutocomplete',

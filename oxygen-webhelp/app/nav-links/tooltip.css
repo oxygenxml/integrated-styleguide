@@ -53,12 +53,12 @@
 @media screen {
 	[data-tooltip-position="left"] .wh-tooltip {
 	    top: -0.5em;
-	    right: calc(100% + 1em);
+	    right: 105%;
 	}
 	
 	[data-tooltip-position="right"] .wh-tooltip {
 	    top: -0.5em;
-	    left: calc(100% + .4em);
+	    left: 105%;
 	}
 	
 	[data-tooltip-position="top"] .wh-tooltip {

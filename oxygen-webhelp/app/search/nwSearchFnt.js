@@ -1,4 +1,4 @@
-define(["index", "options", "stemmer", "util"], function(index, options, stemmer, util) {
+define(["index", "options", "stemmer", "util", "kuromoji"], function(index, options, stemmer, util, kuromoji) {
     /*
 
      David Cramer
@@ -195,6 +195,36 @@ define(["index", "options", "stemmer", "util"], function(index, options, stemmer
         this.breadcrumb = breadcrumb;
     }
 
+    function performSearchDriver(searchQuery, _callback) {
+        var indexerLanguage = options.getIndexerLanguage();
+        var useKuromoji = indexerLanguage.indexOf("ja") != -1;
+
+        if (useKuromoji) {
+            kuromoji.builder({ dicPath: "oxygen-webhelp/lib/kuromoji/dict" }).build(function (err, tokenizer) {
+                // tokenizer is ready
+                var tokens = tokenizer.tokenize(searchQuery);
+
+                var finalWordsList = [];
+                for (var w in tokens) {
+                    var word = tokens[w].surface_form;
+                    if (word!=" ") {
+                        finalWordsList.push(word);
+                    }
+                }
+
+                if (finalWordsList.length) {
+                    var finalWordsString = finalWordsList.join(" ");
+
+                    _callback(performSearchInternal(finalWordsString));
+                } else {
+                    util.debug("Empty set");
+                }
+            });
+        } else {
+            _callback(performSearchInternal(searchQuery));
+        }
+    }
+
     /**
      * This is the main function of the WH search library used to execute a search query.
      * The stop words are filtered.
@@ -219,7 +249,7 @@ define(["index", "options", "stemmer", "util"], function(index, options, stemmer
         }
 
         // Remove ' and " characters
-        searchQuery = searchQuery.replace(/"/g, " ").replace(/'/g, " ")
+        searchQuery = searchQuery.replace(/"/g, " ").replace(/'/g, " ");
 
         var errorMsg;
         try {
@@ -1711,7 +1741,7 @@ define(["index", "options", "stemmer", "util"], function(index, options, stemmer
     }
 
     return {
-        performSearch: performSearchInternal
+        performSearch: performSearchDriver
     }
 
 });

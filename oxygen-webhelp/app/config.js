@@ -3,7 +3,8 @@ define(function() {
     var modulePaths = {
         // core
         "webhelp" : "core/webhelp",
-        "expand" : "core/expand",
+        "expand": "core/expand",
+        "polyfill": "core/polyfill",
         // context sensitive help
         "context-help" : "context-help/context-help",
         "context-help-map" : "context-help/context-help-map",
@@ -70,7 +71,9 @@ define(function() {
         // JQuery Bootpag
         "jquery.bootpag" : "../lib/jquery-bootpag/jquery.bootpag.min",
         // Popper
-        "bootstrap" : "../lib/bootstrap/js/bootstrap.bundle.min"
+        "bootstrap" : "../lib/bootstrap/js/bootstrap.bundle.min",
+
+        "kuromoji" : "../lib/kuromoji/kuromoji"
     };
 
     var shimConfig = {
