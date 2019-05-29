@@ -37,6 +37,17 @@
       <param name="fragment" value=";"/>
       <param name="message" value="List items should not end with semi-colon"/>
    </pattern>
+   <!--Generated from topics/lists.dita.
+    -->
+   <pattern is-a="restrictNumberOfChildren"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/lists.html">
+      <param name="parentElement" value="ul"/>
+      <param name="element" value="li"/>
+      <param name="min" value="2"/>
+      <param name="max" value="10"/>
+      <param name="message"
+             value="A list should contain more than 2 items and no more than 10 items."/>
+   </pattern>
    <!--Generated from topics/metadata.dita.
     -->
    <pattern is-a="avoidWordInElement"
