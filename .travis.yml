@@ -9,7 +9,7 @@ env:
   global:
   - TITLE="Intelligent Interactive Styleguide"
   - WELCOME="Your DITA Styleguide"
-  - TEMPLATE="orange"
+  - TEMPLATE="oxygen"
   - VARIANT="tiles"
 notifications:
   email:
