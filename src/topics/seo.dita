@@ -7,6 +7,35 @@
 		<section id="section_shc_vwk_p2b">
 			<title>Titles</title>
 			<p>Titles should have no more than 55 characters, otherwise they may be rendered truncated.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictCharacters</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>title</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minChars</dt>
+						<dd>1</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxChars</dt>
+						<dd>55</dd>
+					</dlentry>
+					<dlentry>
+						<dt>normalize</dt>
+						<dd>yes</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>Titles should have no more than 55 characters, otherwise they may be
+							rendered truncated.</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
 		<section id="section_svm_5wk_p2b">
 			<title>Short descriptions</title>
