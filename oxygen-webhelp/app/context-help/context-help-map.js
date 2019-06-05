@@ -1,1 +1,1 @@
-define(function() { return [{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/images.html"},{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/lists.html"},{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/metadata.html"}]});
+define(function() { return [{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/images.html"},{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/lists.html"},{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/metadata.html"},{"appname":"", "appid":"topic_yrp_jwk_p2b", "path":"topics/seo.html"}]});
