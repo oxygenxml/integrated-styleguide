@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="topic_yrp_jwk_p2b">
+    <title>SEO guidelines</title>
+    <body>
+		<section id="section_shc_vwk_p2b">
+			<title>Titles</title>
+			<p>Titles should have no more than 55 characters, otherwise they may be rendered truncated.</p>
+		</section>
+		<section id="section_svm_5wk_p2b">
+			<title>Short descriptions</title>
+			<p>Descriptions should describe what the user benefits will be if they will access that content.
+				They should stay within the 164 characters limit.</p>
+		</section>
+    </body>
+</topic>
