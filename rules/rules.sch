@@ -55,4 +55,15 @@
       <param name="message"
              value="Titles should not be long, keep them less than 10 words."/>
    </pattern>
+   <!--Generated from topics/seo.dita.
+    -->
+   <pattern is-a="restrictCharacters"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/seo.html">
+      <param name="parentElement" value="title"/>
+      <param name="minChars" value="1"/>
+      <param name="maxChars" value="55"/>
+      <param name="normalize" value="yes"/>
+      <param name="message"
+             value="Titles should have no more than 55 characters, otherwise they may be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;rendered truncated."/>
+   </pattern>
 </schema>
