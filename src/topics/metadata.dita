@@ -6,34 +6,14 @@
     <body>
 		<section id="section_shc_vwk_p2b">
 			<title>Index terms</title>
-			<p>Index terms should not start with the product name, for example if the product name is oXygen,
-				do not use </p>
+			<p>Index terms should not start with the product name, for example if the product name is oXygen
+				or SyncroSoft, do not use </p>
 		</section>
 		<example>oxygen validation</example>
 		<p>as index term, use simply </p>
 		<example>validation</example>
 		<p>without mentioning the product name because that will not be relevant, as the product is
 			already the context for the index term.</p>
-		<p>
-			<dl audience="rules">
-				<dlhead>
-					<dthd>Rule</dthd>
-					<ddhd>restrictNesting</ddhd>
-				</dlhead>
-				<dlentry>
-					<dt>element</dt>
-					<dd>indexterm</dd>
-				</dlentry>
-				<dlentry>
-					<dt>maxNestingLevel</dt>
-					<dd>1</dd>
-				</dlentry>
-				<dlentry>
-					<dt>message</dt>
-					<dd>indexterms</dd>
-				</dlentry>
-			</dl>
-		</p>
 		<p>
 			<dl audience="rules">
 				<dlhead>
@@ -61,7 +41,7 @@
 		</section>
 		<section id="section_bn1_25m_5fb">
 			<title>Titles and short descriptions</title>
-			<p>Titles should not be very long, we should keep them less than 1 words.</p>
+			<p>Titles should not be very long, we should keep them less than 10 words.</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
@@ -78,7 +58,7 @@
 					</dlentry>
 					<dlentry>
 						<dt>maxWords</dt>
-						<dd>12</dd>
+						<dd>10</dd>
 					</dlentry>
 					<dlentry>
 						<dt>message</dt>
