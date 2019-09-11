@@ -1,4 +1,4 @@
-define(["index", "options", "stemmer", "util", "kuromoji"], function(index, options, stemmer, util, kuromoji) {
+define(["index", "options", "stemmer", "util"], function(index, options, stemmer, util) {
     /*
 
      David Cramer
@@ -200,26 +200,29 @@ define(["index", "options", "stemmer", "util", "kuromoji"], function(index, opti
         var useKuromoji = indexerLanguage.indexOf("ja") != -1;
 
         if (useKuromoji) {
-            kuromoji.builder({ dicPath: "oxygen-webhelp/lib/kuromoji/dict" }).build(function (err, tokenizer) {
-                // tokenizer is ready
-                var tokens = tokenizer.tokenize(searchQuery);
+            require(["kuromoji"], function (kuromoji) {
+                kuromoji.builder({ dicPath: "oxygen-webhelp/lib/kuromoji/dict" }).build(function (err, tokenizer) {
+                    // tokenizer is ready
+                    var tokens = tokenizer.tokenize(searchQuery);
 
-                var finalWordsList = [];
-                for (var w in tokens) {
-                    var word = tokens[w].surface_form;
-                    if (word!=" ") {
-                        finalWordsList.push(word);
+                    var finalWordsList = [];
+                    for (var w in tokens) {
+                        var word = tokens[w].surface_form;
+                        if (word!=" ") {
+                            finalWordsList.push(word);
+                        }
                     }
-                }
 
-                if (finalWordsList.length) {
-                    var finalWordsString = finalWordsList.join(" ");
+                    if (finalWordsList.length) {
+                        var finalWordsString = finalWordsList.join(" ");
 
-                    _callback(performSearchInternal(finalWordsString));
-                } else {
-                    util.debug("Empty set");
-                }
-            });
+                        _callback(performSearchInternal(finalWordsString));
+                    } else {
+                        util.debug("Empty set");
+                    }
+                });
+            })
+
         } else {
             _callback(performSearchInternal(searchQuery));
         }

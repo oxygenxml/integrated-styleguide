@@ -294,7 +294,8 @@ function pageTocHighlightNode(scrollPosition) {
     var scrollPosition = scrollPosition !== undefined ? Math.round(scrollPosition) : 0;
     var topOffset = 150;
     var hash = location.hash != undefined ? location.hash : "";
-    var elemHashTop =  hash != "" ? Math.round($(hash).offset().top) : 0;
+    var hashOffTop = $(hash).offset() != undefined ? $(hash).offset().top : 0;
+    var elemHashTop =  hash != "" ? Math.round(hashOffTop) : 0;
     
     if( hash.substr(1) != '' && elemHashTop >= scrollPosition && (elemHashTop <= (scrollPosition + topOffset)) ){
         $('#wh_topic_toc a').removeClass('current_node');
