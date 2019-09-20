@@ -92,8 +92,8 @@
 					</dlentry>
 					<dlentry>
 						<dt>message</dt>
-						<dd>Short deascription shopuld be used on twitter so we need to keep them
-							less than 140 characters.</dd>
+						<dd>Short deascription shopuld be used on twitter so we need to keep them less than 160
+							characters.</dd>
 					</dlentry>
 				</dl>
 			</p>
