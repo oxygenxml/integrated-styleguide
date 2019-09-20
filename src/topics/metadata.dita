@@ -66,8 +66,8 @@
 					</dlentry>
 				</dl>
 			</p>
-			<p>Short descriptions should be less than 20 words and also less than 140 characters so
-				we can use them easily with twitter.</p>
+			<p>Short descriptions should be less than 20 words and also less than 160 characters so we can
+				use them easily with twitter.</p>
 			<p>
 				<dl audience="rules">
 					<dlhead>
@@ -84,7 +84,7 @@
 					</dlentry>
 					<dlentry>
 						<dt>maxChars</dt>
-						<dd>140</dd>
+						<dd>160</dd>
 					</dlentry>
 					<dlentry>
 						<dt>normalize</dt>
