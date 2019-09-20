@@ -71,10 +71,10 @@
             see="http://oxygenxml.github.io/integrated-styleguide/topics/metadata.html">
       <param name="parentElement" value="shortdesc"/>
       <param name="minChars" value="1"/>
-      <param name="maxChars" value="140"/>
+      <param name="maxChars" value="160"/>
       <param name="normalize" value="yes"/>
       <param name="message"
-             value="Short deascription shopuld be used on twitter so we need to keep them&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;less than 140 characters."/>
+             value="Short deascription shopuld be used on twitter so we need to keep them less than 160&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;characters."/>
    </pattern>
    <!--Generated from topics/seo.dita.
     -->
