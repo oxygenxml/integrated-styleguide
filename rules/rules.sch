@@ -91,7 +91,7 @@
     -->
    <pattern is-a="restrictCharacters"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/seo.html">
-      <param name="parentElement" value="shortdes"/>
+      <param name="parentElement" value="shortdesc"/>
       <param name="minChars" value="1"/>
       <param name="maxChars" value="164"/>
       <param name="normalize" value="yes"/>
