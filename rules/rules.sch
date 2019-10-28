@@ -87,4 +87,14 @@
       <param name="message"
              value="Titles should have no more than 55 characters, otherwise they may be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;rendered truncated."/>
    </pattern>
+   <!--Generated from topics/seo.dita.
+    -->
+   <pattern is-a="restrictCharacters"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/seo.html">
+      <param name="parentElement" value="shortdes"/>
+      <param name="minChars" value="1"/>
+      <param name="maxChars" value="164"/>
+      <param name="normalize" value="yes"/>
+      <param name="message" value="We use sd for google results..."/>
+   </pattern>
 </schema>
