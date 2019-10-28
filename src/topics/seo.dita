@@ -41,6 +41,34 @@
 			<title>Short descriptions</title>
 			<p>Descriptions should describe what the user benefits will be if they will access that content.
 				They should stay within the 164 characters limit.</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
+						<ddhd>restrictCharacters</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>parentElement</dt>
+						<dd>shortdes</dd>
+					</dlentry>
+					<dlentry>
+						<dt>minChars</dt>
+						<dd>1</dd>
+					</dlentry>
+					<dlentry>
+						<dt>maxChars</dt>
+						<dd>164</dd>
+					</dlentry>
+					<dlentry>
+						<dt>normalize</dt>
+						<dd>yes</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>We use sd for google results...</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
     </body>
 </topic>
