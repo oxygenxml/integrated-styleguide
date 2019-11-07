@@ -81,7 +81,7 @@
    <pattern is-a="restrictCharacters"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/seo.html">
       <param name="parentElement" value="title"/>
-      <param name="minChars" value="1"/>
+      <param name="minChars" value="10"/>
       <param name="maxChars" value="55"/>
       <param name="normalize" value="yes"/>
       <param name="message"
