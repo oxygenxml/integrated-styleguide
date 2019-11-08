@@ -89,6 +89,14 @@
    </pattern>
    <!--Generated from topics/seo.dita.
     -->
+   <pattern is-a="avoidWordInElement"
+            see="http://oxygenxml.github.io/integrated-styleguide/topics/seo.html">
+      <param name="element" value="indexterm"/>
+      <param name="word" value="oxygen"/>
+      <param name="message" value="Do not use the product name inindex terms!"/>
+   </pattern>
+   <!--Generated from topics/seo.dita.
+    -->
    <pattern is-a="restrictCharacters"
             see="http://oxygenxml.github.io/integrated-styleguide/topics/seo.html">
       <param name="parentElement" value="shortdesc"/>
