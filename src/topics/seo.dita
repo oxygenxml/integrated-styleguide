@@ -45,6 +45,26 @@
 				<dl audience="rules">
 					<dlhead>
 						<dthd>Rule</dthd>
+						<ddhd>avoidWordInElement</ddhd>
+					</dlhead>
+					<dlentry>
+						<dt>element</dt>
+						<dd>indexterm</dd>
+					</dlentry>
+					<dlentry>
+						<dt>word</dt>
+						<dd>oxygen</dd>
+					</dlentry>
+					<dlentry>
+						<dt>message</dt>
+						<dd>Do not use the product name inindex terms!</dd>
+					</dlentry>
+				</dl>
+			</p>
+			<p>
+				<dl audience="rules">
+					<dlhead>
+						<dthd>Rule</dthd>
 						<ddhd>restrictCharacters</ddhd>
 					</dlhead>
 					<dlentry>
