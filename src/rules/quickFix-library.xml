@@ -40,7 +40,7 @@
 		</sqf:description>
 		<sqf:user-entry name="replace">
 			<sqf:description>
-				<sqf:title>Please enter the replasement word or phrase</sqf:title>
+				<sqf:title>Please enter the replacement word or phrase</sqf:title>
 			</sqf:description>
 		</sqf:user-entry>
 		<let name="quoted" value="'$word'"/>
